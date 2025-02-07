@@ -1,5 +1,3 @@
-
-
 // import { motion } from "framer-motion";
 // import { Search, Trash2, Eye } from "lucide-react";
 // import { useEffect, useState } from "react";
@@ -264,7 +262,6 @@
 //         </button>
 //       </div>
 
-    
 //       {/* Add Product Modal */}
 //       {isAddModalOpen && (
 //         <Modal
@@ -366,7 +363,6 @@
 
 // export default ProductsTable;
 
-
 import { motion } from "framer-motion";
 import { Search, Trash2, Eye } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -465,17 +461,45 @@ const ProductsTable = () => {
   };
 
   // Delete a product
+  //   const handleDeleteProduct = async (id) => {
+  //     try {
+  //       await axios.delete(`${API_URL}/${id}`);
+  //       toast.success("Product deleted successfully!");
+  //       setProducts(products.filter((product) => product.id !== id));
+  //     } catch (error) {
+  //       console.error("Error deleting product:", error);
+  //       toast.error("Failed to delete product");
+  //     }
+  //   };
   const handleDeleteProduct = async (id) => {
-    try {
-      await axios.delete(`${API_URL}/${id}`);
-      toast.success("Product deleted successfully!");
-      setProducts(products.filter((product) => product.id !== id));
-    } catch (error) {
-      console.error("Error deleting product:", error);
-      toast.error("Failed to delete product");
-    }
-  };
+    // Show SweetAlert confirmation dialog
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        try {
+          await axios.delete(`${API_URL}/${id}`);
+          setProducts(products.filter((product) => product.id !== id));
 
+          // Show success message
+          Swal.fire({
+            title: "Deleted!",
+            text: "Your product has been deleted.",
+            icon: "success",
+          });
+        } catch (error) {
+          console.error("Error deleting product:", error);
+          toast.error("Failed to delete product");
+        }
+      }
+    });
+  };
   // View product details
   const handleViewDetails = async (id) => {
     try {

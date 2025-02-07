@@ -4,7 +4,7 @@ import Header from "../components/common/Header";
 import StatCard from "../components/common/StatCard";
 
 import { AlertTriangle, DollarSign, Package, TrendingUp } from "lucide-react";
-import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
+
 
 import ProductsTable from "../components/products/ProductsTable";
 import ProductCountTrendChart from "../components/products/ProductCountTrendChart";
@@ -33,7 +33,7 @@ const ProductsPage = () => {
 				{/* CHARTS */}
 				<div className=''>
 					<ProductCountTrendChart />
-					<CategoryDistributionChart />
+					
 				</div>
 			</main>
 		</div>
