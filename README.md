@@ -1,8 +1,8 @@
 <h1 align="center"> Admin Dashboard</h1>
 
-![Demo App](/public/screenshot-for-readme-1.png)
-![Demo App](/public/screenshot-for-readme-2.png)
-![Demo App](/public/screenshot-for-readme-3.png)
+![Demo App](public/Screenshot 2025-02-07 115422.png)
+![Demo App](public/Screenshot 2025-02-07 115539.png)
+![Demo App](public/Screenshot 2025-02-07 115812.png)
 
 [Video Tutorial on Youtube](https://youtu.be/gK0v_d91epk)
 
