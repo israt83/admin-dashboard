@@ -28,7 +28,7 @@ This project is a single-page application (SPA) designed as an admin dashboard w
 
 
 #### **Utilities**
-- **React Hook Form**: For efficient form management and validation.
+
 - **Axios**: For API communication.
 - **Framer Motion**
 - **React Toastify**: For toast notifications.
