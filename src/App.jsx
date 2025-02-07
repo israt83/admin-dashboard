@@ -16,10 +16,11 @@ function App() {
 
       <Sidebar />
       <Routes>
-        <Route path="/products" element={<ProductsPage />} />
         <Route path="/users" element={<UsersPage />} />
+        <Route path="/products" element={<ProductsPage />} />
+
         <Route path="/" element={<OverviewPage />} />
-		<Route path="/settings" element={<SettingsPage />} />
+        <Route path="/settings" element={<SettingsPage />} />
       </Routes>
     </div>
   );

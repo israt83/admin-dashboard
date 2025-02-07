@@ -1,26 +1,50 @@
 <h1 align="center"> Admin Dashboard</h1>
 
 ![Demo App](/public/Screenshot%202025-02-07%20115422.png)
-![Demo App](/public/Screenshot%202025-02-07%20115539.png)
 ![Demo App](public/Screenshot%202025-02-07%20115812.png)
+![Demo App](/public/Screenshot%202025-02-07%20115539.png)
 
-[Vid](https://youtu.be/gK0v_d91epk)
 
-### This is a free admin dashboard ui kit built with:
+--
 
--   React
--   Tailwind CSS
--   Recharts
--   Framer Motion
+## Live Site Link:
+[Admin Dashboard](https://admin-dashboard-beta-orpin.vercel.app/)
+
+--
+
+
+
+### Technologies Used
+
+#### **Frontend**
+- **React**: For building the user interface.
+- **React Router**: For seamless navigation.
+- **Tailwind CSS**: For responsive and modern styling.
+
+
+
+#### **Utilities**
+- **React Hook Form**: For efficient form management and validation.
+- **Axios**: For API communication.
+- **Framer Motion**
+- **React Toastify**: For toast notifications.
+- **sweetalert2**: For notifications.
+- **recharts**
+- **react-icons**
+- **react-modal** : For show details user & product
+
+---
+
 
 It is completely responsive and can be used for any type of web application.
 
-### Run this app locally
+## Running the Project Locally
 
-```shell
-npm install
-```
+1- Clone the site repo repository:
+- git clone https://github.com/israt83/admin-dashboard.git
+- cd admin-dashboard
+- npm i
+- npm run dev  
+- in  site  then Open your browser and navigate to http://localhost: port
 
-```shell
-npm run start
-```
+
